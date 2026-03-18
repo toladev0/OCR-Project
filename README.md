@@ -48,6 +48,27 @@ TESSERACT_PATH = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 POPPLER_PATH = r"C:\poppler\Library\bin"
 ```
 
+## **Setting up Khmer OCR trained data**
+
+1. **Download Khmer trained data**  
+   Download `khm.traineddata` from the [official tessdata repository](https://github.com/tesseract-ocr/tessdata/raw/main/khm.traineddata).
+
+2. **Place it in Tesseract’s tessdata folder**  
+   - Windows:  
+   ```
+   C:\Program Files\Tesseract-OCR\tessdata
+   ```
+   - Mac/Linux:  
+   ```
+   /usr/local/share/tessdata
+   ```
+
+3. **Verify installation**  
+   Run the following command to check available languages:
+   ```bash
+   tesseract --list-langs
+   ```
+   You should see `khm` listed.
 ---
 
 ## **Usage**
